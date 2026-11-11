@@ -180,7 +180,7 @@
 
 <script>
 const DEF = { tv: 150, tvv: 95, cafe: 450, mc: 4, ma: 4, mv: 2, ib: true,
-  p_tv: 59600, p_cafe: 20000, p_a: 1250, p_v: 2150, p_ib: 9000000 };
+  p_tv: 29900, p_cafe: 29900, p_a: 1250, p_v: 2150, p_ib: 9000000 };
 const KEY = 'k0belek_calc_simple_v8';
 let S = {...DEF};
 try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s) { S = {...DEF, ...s}; for (const k of Object.keys(DEF)) if (k.startsWith('p_')) S[k] = DEF[k]; } } catch (e) {}
